@@ -1,0 +1,22 @@
+<form (ngSubmit)="editar(formulario)" #formulario="ngForm" style="display: flex; flex-direction: column; gap: 15px; max-width: 400px; margin: 20px auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: #f9f9f9;">
+
+    <label style="font-weight: bold; margin-bottom: 5px;">Ingresar ID</label>
+    <input type="text" name="id" [(ngModel)]="id" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px;">
+
+    <label style="font-weight: bold; margin-bottom: 5px;">Ingresar Nombre</label>
+    <input type="text" name="nombre" [(ngModel)]="nombre" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px;">
+
+    <label style="font-weight: bold; margin-bottom: 5px;">Ingresar Edad</label>
+    <input type="number" name="edad" [(ngModel)]="edad" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px;">
+
+    <label>Genero</label>
+    <select name="genero" [(ngModel)]="genero">
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+    </select>
+
+    <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+        Enviar
+    </button>
+
+</form>

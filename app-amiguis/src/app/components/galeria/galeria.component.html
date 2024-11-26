@@ -1,0 +1,24 @@
+<div class="row">
+    @for (item of citas; track item) {
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{{item.images.main}}">
+          <img src="{{item.images.main}}" alt="Lights" style="height:100px">
+          
+        </a>
+        <div class="caption">
+            <p>
+                Nombre:{{item.name.first}} {{item.name.middle}} {{item.name.last}} <br>
+                Especie: {{item.species}}
+                <br>
+                <button class="btn btn-primary" [routerLink]="['/citas', item.id]">
+                    Ver Detalles
+                </button>
+            </p>
+        </div>
+      </div>
+    </div>
+    }
+    
+
+  </div>

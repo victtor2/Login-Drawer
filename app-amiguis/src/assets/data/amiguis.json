@@ -1,0 +1,46 @@
+{
+  "amiguis": [
+    {
+      "id": 2,
+      "nombre": "Ana Paz",
+      "edad": 23,
+      "genero": "femenino"
+    },
+    {
+      "id": 3,
+      "nombre": "Luciana Paz",
+      "edad": 25,
+      "genero": "femenino"
+    },
+    {
+      "id": "4",
+      "nombre": "Claudia",
+      "edad": 36,
+      "genero": "femenino"
+    },
+    {
+      "id": "5",
+      "nombre": "Veronica Paz",
+      "edad": 36,
+      "genero": "femenino"
+    },
+    {
+      "id": "6",
+      "nombre": "Maria Paz",
+      "edad": 36,
+      "genero": "femenino"
+    },
+    {
+      "id": "7",
+      "nombre": "Maria Jose Paz",
+      "edad": 36,
+      "genero": "femenino"
+    },
+    {
+      "id": "8",
+      "nombre": "Veronica Rojas",
+      "edad": 37,
+      "genero": "femenino"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Genero</th>
+      </tr>
+    </thead>
+    <tbody>
+        @for (amig of amigui; track amig) {  
+            <tr>
+                <td>{{amig.id}}</td>
+                <td>{{amig.nombre}}</td>
+                <td>{{amig.edad}}</td>
+                <td>{{amig.genero}}</td>
+                <td>
+                  <button class="btn btn-success" [routerLink]="['/editar', amig.id]">Editar</button>
+                  <button class="btn btn-danger" (click)="eliminar(amig.id)">Eliminar</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+  </table>
